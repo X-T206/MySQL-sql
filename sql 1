@@ -1,0 +1,5 @@
+sql语句主要分为DDL、DQL、DML、DCL
+DDL：定义数据库、表字段
+DQL：涉及数据库查询
+DML：表的增、删、改、查操作
+DCL：划分权限
