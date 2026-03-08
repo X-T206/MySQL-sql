@@ -7,3 +7,28 @@
   SELECT 字段1[AS 别名1],字段2[AS 别名2]……FROM 表名;
 3.去除重复记录
   SELECT DISINCT 字段列表 FROM 表名;
+
+二、条件查询
+1.SELECT 字段列表 FROM 表名 WHERE 条件列表;
+2.条件：
+  比较运算符：>,>=,<,<=,=,!=,BETWEEN……AND……,IN(),LIKE '__',LIKE '%X'
+  逻辑运算符：AND,OR,NOT
+
+三、聚合查询
+1.常见聚合函数：count,max,min,avg,sum
+2.语法：SELECT 聚合函数（字段列表）FROM 表名;
+
+四、分组查询
+1.SELSCT 字段列表 FROM 表名 [WHERE 条件] GROUP BY 分组字段名 [HAVING分组后过滤条件];
+WHERE和HAVING的区别：WHERE中不能使用聚合函数，HAVING中可以使用聚合函数
+
+五、排序查询
+1.SELECT 字段列表 FROM 表名 ORDER BY 字段1 排序方式1，字段2 排序方式2;
+2.排序方式：ASC（升序）
+           DESC(降序)
+SELECT * FROM employee order by age asc;
+六、分页查询
+SELECT 字段列表 FROM 表名 LIMIT 启始索引，查询记录数;
+!起始索引从0开始，起始索引=（查询页码-1）*每页显示记录数；
+2.分页查询不同数据库有不同的实现，MYSQL中是LIMIT
+3.如果查询的是第一页数据，起始索引可以省略，直接简写为LIMIT 10
