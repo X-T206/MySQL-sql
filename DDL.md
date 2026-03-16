@@ -1,7 +1,7 @@
-1.查询所有数据库：show DATABASES;
-2.查询当前所有数据库：SELECT DATABASES();
-3.数据库创建
-          CREATE DATABASES 数据库名;
+##### 1.查询所有数据库：show DATABASES;
+##### 2.查询当前所有数据库：SELECT DATABASES();
+##### 3.数据库创建
+      CREATE DATABASES 数据库名;
     3.1删除数据库：DROP DATABASE[IF EXISTS] 数据库名;
     3.2查询当前所在数据库所有表：SHOW TABLES;
         查看表结构： DESC 表名;
@@ -20,7 +20,7 @@
                                                               age int comment '年龄';
                                                               gender varchar(1) comment '性别'
                                                               )comment '用户表';
-4.表修改：
+##### 4.表修改：
           添加字段：    alter table 表名 add 字段名 类型（长度）
           修改数据类型： alter table 表名 modify 字段名  新数据类型（长度）
           修改字段名和字段类型： alter table 表名 change 旧字段名 新字段名 类型（长度） [comment];
