@@ -1,4 +1,5 @@
-一、基本查询
+# 一、基本查询
+```
 1.查询多个字段
   SELECT 字段1，字段2，字段3……FROM 表名;
   SELECT * FROM 表名;
@@ -6,7 +7,7 @@
 2.设置别名
   SELECT 字段1[AS 别名1],字段2[AS 别名2]……FROM 表名;
 3.去除重复记录
-  SELECT DISINCT 字段列表 FROM 表名;
+  SELECT DISINCT 字段列表 FROM 表名;```
 
 二、条件查询
 1.SELECT 字段列表 FROM 表名 WHERE 条件列表;
